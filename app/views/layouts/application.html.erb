@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PostgresUserAuthApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<% if current_user %>
+		<li><a><%= "#{current_user.email}" %></li></a>
+		<li><a><li><a href="/logout">Log Out</a></li></li></a>
+	<% else %>
+		<li><a><li><a href="/login">Log In</a></li></li></a>
+	<% end %>
+
+	<% flash.each do |name, msg| %>
+		<li><a><%= content_tag :div, msg, :id => "flash_#{name}" %></li></a>
+	<% end %>
+<%= yield %>
+
+</body>
+</html>
