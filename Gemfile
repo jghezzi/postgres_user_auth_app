@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.1.0'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
@@ -20,6 +19,7 @@ end
 group :test do
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
+	gem 'shoulda'
 end
 
 gem 'bcrypt', '~> 3.1.7'
