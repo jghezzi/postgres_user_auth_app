@@ -1,0 +1,9 @@
+%table
+	%thead
+		%th List
+		%th Delete?
+	%tbody
+		- @lists.each do |list|
+			%tr
+				%td= list.name
+				%td= check_box_tag "remove", "1", list.remove_list, data: { "list-id" => list.id }

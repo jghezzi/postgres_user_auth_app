@@ -1,5 +1,6 @@
 class PhotosController < ApplicationController
-skip_filter :ensure_logged_in
+	skip_filter :ensure_logged_in
+
 	def index
 			
 	end

@@ -4,11 +4,11 @@ $(function() {
     $(this).addClass("divtwo")
 	});
 
-// 	$('#new_submit').click(function(){
-//    if($('#new_email').val() == ''){
-//       alert('Input can not be left blank');
-//    }
-// });
+	$('#new_submit').click(function(){
+   if($('#new_email').val() == ''){
+      alert('Input can not be left blank');
+   }
+});
 	// $(document).ready
 
 		$("#new_submit").click (function() {

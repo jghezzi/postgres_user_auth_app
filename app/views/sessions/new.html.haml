@@ -1,7 +1,7 @@
 %h4 Log In
-= form_tag url: sessions_path do
+= form_tag sessions_path do
 	= label_tag "E-mail"
-	= text_field :email, params[:email], class: "divone"
+	= text_field_tag :email, params[:email], class: "divone"
 	= label_tag "Password"
-	= password_field :password, class: "divone"
+	= password_field_tag :password, class: "divone"
 	= submit_tag "Log In"

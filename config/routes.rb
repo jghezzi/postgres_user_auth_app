@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :photos
+  resources :lists
 
   # Example resource route with options:
   #   resources :products do
